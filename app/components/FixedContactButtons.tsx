@@ -24,7 +24,7 @@ export default function FixedContactButtons() {
       {/* Call Button */}
       <a
         href="tel:+971502765910"
-        className="group bg-[#2a347c] hover:bg-[#1a2552] text-white rounded-full p-3 md:p-4 shadow-2xl hover:shadow-3xl transition-all transform hover:scale-110 active:scale-95 flex items-center justify-center size-14"
+        className="group bg-[#133563] hover:bg-[#1a2552] text-white rounded-full p-3 md:p-4 shadow-2xl hover:shadow-3xl transition-all transform hover:scale-110 active:scale-95 flex items-center justify-center size-14"
         aria-label="Call us"
       >
         <svg

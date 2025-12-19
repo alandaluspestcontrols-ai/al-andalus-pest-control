@@ -36,13 +36,13 @@ export default function About() {
             {/* Right Column - Content */}
             <div className="space-y-6 md:space-y-8">
               {/* Welcome Heading */}
-              <h1 className="text-4xl md:text-[56px] font-bold text-[#2a347c] leading-tight">
+              <h1 className="text-4xl md:text-[56px] font-bold text-[#133563] leading-tight">
                 {t.about.title}
               </h1>
 
               {/* Company Definition Section */}
               <div className="space-y-4">
-                <h2 className="text-lg md:text-xl font-semibold text-[#2a347c]">
+                <h2 className="text-lg md:text-xl font-semibold text-[#133563]">
                   {t.about.definitionTitle}
                 </h2>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -55,7 +55,7 @@ export default function About() {
 
               {/* General Manager Section */}
               <div className="space-y-4 pt-4">
-                <h3 className="text-3xl md:text-[44px] font-bold text-[#2a347c] leading-tight">
+                <h3 className="text-3xl md:text-[44px] font-bold text-[#133563] leading-tight">
                   {t.about.generalManager.title}
                 </h3>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -148,7 +148,7 @@ export default function About() {
       <section className="py-12 px-4 md:py-16 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2a347c] text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#133563] text-center">
               {t.about.companyIntro.title}
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto text-center">
@@ -162,7 +162,7 @@ export default function About() {
       <section className="py-12 px-4 md:py-16">
         <div className="container mx-auto max-w-[1250px]">
           <div className="space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2a347c] text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#133563] text-center">
               {t.about.companyServices.title}
             </h2>
             <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto">
@@ -171,7 +171,7 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-6 rounded-xl shadow-lg">
                 <div className="text-4xl mb-4">🐜</div>
-                <h3 className="text-xl font-bold text-[#2a347c] mb-3">
+                <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en"
                     ? "Termite Control"
                     : "مكافحة النمل الأبيض"}
@@ -182,7 +182,7 @@ export default function About() {
               </div>
               <div className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-6 rounded-xl shadow-lg">
                 <div className="text-4xl mb-4">🪳</div>
-                <h3 className="text-xl font-bold text-[#2a347c] mb-3">
+                <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en" ? "Cockroach Control" : "مكافحة الصراصير"}
                 </h3>
                 <p className="text-gray-700">
@@ -191,14 +191,14 @@ export default function About() {
               </div>
               <div className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-6 rounded-xl shadow-lg">
                 <div className="text-4xl mb-4">🐭</div>
-                <h3 className="text-xl font-bold text-[#2a347c] mb-3">
+                <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en" ? "Rat Control" : "مكافحة الفئران"}
                 </h3>
                 <p className="text-gray-700">{t.about.companyServices.rat}</p>
               </div>
               <div className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-6 rounded-xl shadow-lg">
                 <div className="text-4xl mb-4">🦟</div>
-                <h3 className="text-xl font-bold text-[#2a347c] mb-3">
+                <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en" ? "Mosquito Control" : "مكافحة البعوض"}
                 </h3>
                 <p className="text-gray-700">
@@ -214,34 +214,34 @@ export default function About() {
       <section className="py-12 px-4 md:py-16 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2a347c] text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#133563] text-center">
               {t.about.whyChoose.title}
             </h2>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-[#2a347c]">
-                <h3 className="text-xl font-bold text-[#2a347c] mb-3">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-[#133563]">
+                <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en"
                     ? "Modern Technologies"
                     : "التقنيات الحديثة"}
                 </h3>
                 <p className="text-gray-700">{t.about.whyChoose.modernTech}</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-[#2a347c]">
-                <h3 className="text-xl font-bold text-[#2a347c] mb-3">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-[#133563]">
+                <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en" ? "Professionalism" : "المهنية"}
                 </h3>
                 <p className="text-gray-700">
                   {t.about.whyChoose.professionalism}
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-[#2a347c]">
-                <h3 className="text-xl font-bold text-[#2a347c] mb-3">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-[#133563]">
+                <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en" ? "Customized Services" : "خدمات مخصصة"}
                 </h3>
                 <p className="text-gray-700">{t.about.whyChoose.customized}</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-[#2a347c]">
-                <h3 className="text-xl font-bold text-[#2a347c] mb-3">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-[#133563]">
+                <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en" ? "Good Reputation" : "سمعة طيبة"}
                 </h3>
                 <p className="text-gray-700">{t.about.whyChoose.reputation}</p>
@@ -255,12 +255,12 @@ export default function About() {
       <section className="py-12 px-4 md:py-16">
         <div className="container mx-auto max-w-[1250px]">
           <div className="space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2a347c] text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#133563] text-center">
               {t.about.serviceAreas.title}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-bold text-[#2a347c] mb-2">
+                <h3 className="text-lg font-bold text-[#133563] mb-2">
                   {language === "en" ? "Dubai" : "دبي"}
                 </h3>
                 <p className="text-gray-700 text-sm">
@@ -268,7 +268,7 @@ export default function About() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-bold text-[#2a347c] mb-2">
+                <h3 className="text-lg font-bold text-[#133563] mb-2">
                   {language === "en" ? "Abu Dhabi" : "أبوظبي"}
                 </h3>
                 <p className="text-gray-700 text-sm">
@@ -276,7 +276,7 @@ export default function About() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-bold text-[#2a347c] mb-2">
+                <h3 className="text-lg font-bold text-[#133563] mb-2">
                   {language === "en" ? "Sharjah" : "الشارقة"}
                 </h3>
                 <p className="text-gray-700 text-sm">
@@ -284,7 +284,7 @@ export default function About() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-bold text-[#2a347c] mb-2">
+                <h3 className="text-lg font-bold text-[#133563] mb-2">
                   {language === "en" ? "Ajman" : "عجمان"}
                 </h3>
                 <p className="text-gray-700 text-sm">
@@ -292,7 +292,7 @@ export default function About() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-bold text-[#2a347c] mb-2">
+                <h3 className="text-lg font-bold text-[#133563] mb-2">
                   {language === "en" ? "Fujairah" : "الفجيرة"}
                 </h3>
                 <p className="text-gray-700 text-sm">
@@ -300,7 +300,7 @@ export default function About() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-bold text-[#2a347c] mb-2">
+                <h3 className="text-lg font-bold text-[#133563] mb-2">
                   {language === "en" ? "Ras Al Khaimah" : "رأس الخيمة"}
                 </h3>
                 <p className="text-gray-700 text-sm">
@@ -308,7 +308,7 @@ export default function About() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow md:col-span-2 lg:col-span-1">
-                <h3 className="text-lg font-bold text-[#2a347c] mb-2">
+                <h3 className="text-lg font-bold text-[#133563] mb-2">
                   {language === "en" ? "Umm Al Quwain" : "أم القيوين"}
                 </h3>
                 <p className="text-gray-700 text-sm">
@@ -321,7 +321,7 @@ export default function About() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-12 px-4 md:py-16 bg-gradient-to-br from-[#2a347c] to-[#1a2552] text-white">
+      <section className="py-12 px-4 md:py-16 bg-gradient-to-br from-[#133563] to-[#1a2552] text-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="space-y-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold">
@@ -341,7 +341,7 @@ export default function About() {
       <section className="py-12 px-4 md:py-16 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2a347c] text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#133563] text-center">
               {t.about.summary.title}
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto text-center">

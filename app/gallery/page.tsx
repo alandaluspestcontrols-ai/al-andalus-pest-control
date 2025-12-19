@@ -20,15 +20,15 @@ export default function Gallery() {
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 px-4 bg-gradient-to-br from-[#e4d8a7] via-[#d9d0a0] to-[#d4c897] overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#2a347c] rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#2a347c] rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#133563] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#133563] rounded-full blur-3xl"></div>
         </div>
 
         <div className="container mx-auto max-w-[1250px] relative z-10 text-center">
-          <div className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-[#2a347c] font-semibold text-sm mb-4">
+          <div className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-[#133563] font-semibold text-sm mb-4">
             {language === "en" ? "Gallery" : "المعرض"}
           </div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#2a347c] mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#133563] mb-6 leading-tight">
             {language === "en" ? "Our Gallery" : "معرضنا"}
           </h1>
           <p className="text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
@@ -47,7 +47,7 @@ export default function Gallery() {
               onClick={() => setActiveTab("images")}
               className={`px-8 py-3 rounded-full font-semibold transition-all ${
                 activeTab === "images"
-                  ? "bg-[#2a347c] text-white shadow-lg"
+                  ? "bg-[#133563] text-white shadow-lg"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
@@ -57,7 +57,7 @@ export default function Gallery() {
               onClick={() => setActiveTab("videos")}
               className={`px-8 py-3 rounded-full font-semibold transition-all ${
                 activeTab === "videos"
-                  ? "bg-[#2a347c] text-white shadow-lg"
+                  ? "bg-[#133563] text-white shadow-lg"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
@@ -137,7 +137,7 @@ export default function Gallery() {
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
                       <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <svg
-                          className="w-8 h-8 text-[#2a347c] ml-1"
+                          className="w-8 h-8 text-[#133563] ml-1"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                         >
@@ -236,4 +236,3 @@ export default function Gallery() {
     </div>
   );
 }
-

@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="space-y-3">
               <a
                 href="tel:+971502765910"
-                className="flex items-center gap-3 text-[#2a347c] hover:text-[#1a2552] transition-colors group"
+                className="flex items-center gap-3 text-[#133563] hover:text-[#1a2552] transition-colors group"
               >
                 <svg
                   className="w-6 h-6 group-hover:scale-110 transition-transform"
@@ -56,7 +56,7 @@ export default function Footer() {
 
             {/* Company Name */}
             <div>
-              <h3 className="text-2xl font-bold text-[#2a347c] mb-4">
+              <h3 className="text-2xl font-bold text-[#133563] mb-4">
                 AL ANDALUS Pest Control
               </h3>
             </div>
@@ -78,7 +78,7 @@ export default function Footer() {
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-md">
                 <svg
-                  className="w-6 h-6 text-[#2a347c]"
+                  className="w-6 h-6 text-[#133563]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -98,10 +98,10 @@ export default function Footer() {
                 </svg>
               </div>
               <div className="flex-1">
-                <p className="text-[#2a347c] font-semibold text-lg mb-2">
+                <p className="text-[#133563] font-semibold text-lg mb-2">
                   {t.contact.address}
                 </p>
-                <div className="text-[#2a347c] font-medium">
+                <div className="text-[#133563] font-medium">
                   <p className="mb-2">
                     {language === "en"
                       ? "Dubai - Abu Dhabi - Sharjah - Ajman - Umm Al Quwain - Al Ain"
@@ -115,7 +115,7 @@ export default function Footer() {
           {/* Right Section - Social Media */}
           <div className="space-y-6">
             <div>
-              <h4 className="text-2xl font-bold text-[#2a347c] mb-6 text-center md:text-left">
+              <h4 className="text-2xl font-bold text-[#133563] mb-6 text-center md:text-left">
                 {language === "en" ? "Stay in touch" : "ابق على تواصل"}
               </h4>
               <div className="flex gap-4 justify-center md:justify-start">
@@ -175,8 +175,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section - Copyright */}
-        <div className="border-t border-[#2a347c]/20 pt-8 mt-8">
-          <p className="text-center text-[#2a347c] font-semibold">
+        <div className="border-t border-[#133563]/20 pt-8 mt-8">
+          <p className="text-center text-[#133563] font-semibold">
             {t.footer.rights}
           </p>
         </div>

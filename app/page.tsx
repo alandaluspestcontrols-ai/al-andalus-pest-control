@@ -88,19 +88,19 @@ export default function Home() {
       >
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#2a347c] rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#2a347c] rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#133563] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#133563] rounded-full blur-3xl"></div>
         </div>
 
         <div className="container mx-auto max-w-[1250px] relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
-              <div className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-[#2a347c] font-semibold text-sm mb-4">
+              <div className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-[#133563] font-semibold text-sm mb-4">
                 {language === "en"
                   ? "✨ Trusted Pest Control Experts"
                   : "✨ خبراء مكافحة حشرات الموثوقون"}
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#2a347c] leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#133563] leading-tight">
                 {t.hero.subtitle}
               </h1>
               <p className="text-xl text-gray-800 leading-relaxed">
@@ -114,7 +114,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 bg-white/60 backdrop-blur-sm p-4 rounded-xl">
                   <div className="text-3xl">🛡️</div>
                   <div>
-                    <div className="font-bold text-[#2a347c] text-sm">
+                    <div className="font-bold text-[#133563] text-sm">
                       {language === "en" ? "Safe & Effective" : "آمن وفعال"}
                     </div>
                     <div className="text-xs text-gray-600">
@@ -125,7 +125,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 bg-white/60 backdrop-blur-sm p-4 rounded-xl">
                   <div className="text-3xl">⚡</div>
                   <div>
-                    <div className="font-bold text-[#2a347c] text-sm">
+                    <div className="font-bold text-[#133563] text-sm">
                       {language === "en"
                         ? "24/7 Service"
                         : "خدمة على مدار الساعة"}
@@ -138,7 +138,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 bg-white/60 backdrop-blur-sm p-4 rounded-xl">
                   <div className="text-3xl">✅</div>
                   <div>
-                    <div className="font-bold text-[#2a347c] text-sm">
+                    <div className="font-bold text-[#133563] text-sm">
                       {language === "en" ? "Warranty" : "ضمان"}
                     </div>
                     <div className="text-xs text-gray-600">
@@ -151,7 +151,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 bg-white/60 backdrop-blur-sm p-4 rounded-xl">
                   <div className="text-3xl">🏆</div>
                   <div>
-                    <div className="font-bold text-[#2a347c] text-sm">
+                    <div className="font-bold text-[#133563] text-sm">
                       {language === "en" ? "Expert Team" : "فريق خبير"}
                     </div>
                     <div className="text-xs text-gray-600">
@@ -164,7 +164,7 @@ export default function Home() {
               <div className="flex gap-4 flex-wrap">
                 <a
                   href="#contact"
-                  className="group bg-[#2a347c] text-white px-8 py-4 rounded-full hover:bg-[#1a2552] transition-all transform hover:scale-105 font-semibold shadow-xl hover:shadow-2xl flex items-center gap-2"
+                  className="group bg-[#539B47] text-white px-8 py-4 rounded-full hover:bg-[#1a2552] transition-all transform hover:scale-105 font-semibold shadow-xl hover:shadow-2xl flex items-center gap-2"
                 >
                   <span>{t.hero.cta}</span>
                   <svg
@@ -183,7 +183,7 @@ export default function Home() {
                 </a>
                 <a
                   href="tel:+971502765910"
-                  className="bg-white text-[#2a347c] px-8 py-4 rounded-full hover:bg-gray-50 transition-all border-2 border-[#2a347c] font-semibold shadow-lg hover:shadow-xl flex items-center gap-2"
+                  className="bg-white text-[#133563] px-8 py-4 rounded-full hover:bg-gray-50 transition-all border-2 border-[#133563] font-semibold shadow-lg hover:shadow-xl flex items-center gap-2"
                 >
                   <svg
                     className="w-5 h-5"
@@ -204,7 +204,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center relative">
               <div className="relative">
-                <div className="absolute -inset-4 bg-[#2a347c] rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
+                <div className="absolute -inset-4 bg-[#133563] rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
                 <Image
                   src={img0022}
                   alt="Pest Control Service"
@@ -225,7 +225,6 @@ export default function Home() {
               img0014,
               img0015,
               img0016,
-              img0017,
             ].map((img, index) => (
               <div
                 key={index}
@@ -245,7 +244,7 @@ export default function Home() {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-[#2a347c] to-[#1a2552] text-white">
+      <section className="py-16 px-4 bg-gradient-to-r from-[#133563] to-[#1a2552] text-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div className="text-center">
@@ -275,10 +274,9 @@ export default function Home() {
           </div>
 
           {/* Statistics Section Images Gallery */}
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
             {[
               img0018,
-              img0019,
               img0020,
               img0021,
               img0023,
@@ -306,12 +304,12 @@ export default function Home() {
       <section className="py-20 px-4 bg-gradient-to-br from-white via-[#e4d8a7]/10 to-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-[#2a347c] rounded-full text-white font-semibold text-sm mb-4">
+            <div className="inline-block px-4 py-2 bg-[#539B47] rounded-full text-white font-semibold text-sm mb-4">
               {language === "en"
                 ? "Al Andalus Pest Control"
                 : "شركة الأندلس لمكافحة حشرات"}
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2a347c] mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#133563] mb-6">
               {t.alAndalusIntro.title}
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 mb-4 max-w-4xl mx-auto font-semibold">
@@ -325,34 +323,34 @@ export default function Home() {
           {/* Services Breakdown */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {/* Household Pest Control */}
-            <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-gray-100 hover:border-[#2a347c] transition-all hover:shadow-2xl">
+            <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-gray-100 hover:border-[#133563] transition-all hover:shadow-2xl">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-4xl mb-6">
                 🏠
               </div>
-              <h3 className="text-2xl font-bold text-[#2a347c] mb-6">
+              <h3 className="text-2xl font-bold text-[#133563] mb-6">
                 {t.alAndalusIntro.household.title}
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <span className="text-[#2a347c] mt-1">✓</span>
+                  <span className="text-[#133563] mt-1">✓</span>
                   <span className="text-gray-700">
                     {t.alAndalusIntro.household.cockroach}
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#2a347c] mt-1">✓</span>
+                  <span className="text-[#133563] mt-1">✓</span>
                   <span className="text-gray-700">
                     {t.alAndalusIntro.household.termites}
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#2a347c] mt-1">✓</span>
+                  <span className="text-[#133563] mt-1">✓</span>
                   <span className="text-gray-700">
                     {t.alAndalusIntro.household.mosquitoes}
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#2a347c] mt-1">✓</span>
+                  <span className="text-[#133563] mt-1">✓</span>
                   <span className="text-gray-700">
                     {t.alAndalusIntro.household.rodents}
                   </span>
@@ -361,28 +359,28 @@ export default function Home() {
             </div>
 
             {/* Commercial Pest Control */}
-            <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-gray-100 hover:border-[#2a347c] transition-all hover:shadow-2xl">
+            <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-gray-100 hover:border-[#133563] transition-all hover:shadow-2xl">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-4xl mb-6">
                 🏢
               </div>
-              <h3 className="text-2xl font-bold text-[#2a347c] mb-6">
+              <h3 className="text-2xl font-bold text-[#133563] mb-6">
                 {t.alAndalusIntro.commercial.title}
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <span className="text-[#2a347c] mt-1">✓</span>
+                  <span className="text-[#133563] mt-1">✓</span>
                   <span className="text-gray-700">
                     {t.alAndalusIntro.commercial.restaurants}
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#2a347c] mt-1">✓</span>
+                  <span className="text-[#133563] mt-1">✓</span>
                   <span className="text-gray-700">
                     {t.alAndalusIntro.commercial.hospitals}
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#2a347c] mt-1">✓</span>
+                  <span className="text-[#133563] mt-1">✓</span>
                   <span className="text-gray-700">
                     {t.alAndalusIntro.commercial.factories}
                   </span>
@@ -391,22 +389,22 @@ export default function Home() {
             </div>
 
             {/* Agricultural Pest Control */}
-            <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-gray-100 hover:border-[#2a347c] transition-all hover:shadow-2xl">
+            <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-gray-100 hover:border-[#133563] transition-all hover:shadow-2xl">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center text-4xl mb-6">
                 🌾
               </div>
-              <h3 className="text-2xl font-bold text-[#2a347c] mb-6">
+              <h3 className="text-2xl font-bold text-[#133563] mb-6">
                 {t.alAndalusIntro.agricultural.title}
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <span className="text-[#2a347c] mt-1">✓</span>
+                  <span className="text-[#133563] mt-1">✓</span>
                   <span className="text-gray-700">
                     {t.alAndalusIntro.agricultural.crops}
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#2a347c] mt-1">✓</span>
+                  <span className="text-[#133563] mt-1">✓</span>
                   <span className="text-gray-700">
                     {t.alAndalusIntro.agricultural.plants}
                   </span>
@@ -416,7 +414,7 @@ export default function Home() {
           </div>
 
           {/* Why Choose Al-Andalus */}
-          <div className="bg-gradient-to-br from-[#2a347c] to-[#1a2552] rounded-3xl shadow-2xl p-8 md:p-12 mb-16 text-white">
+          <div className="bg-gradient-to-br from-[#133563] to-[#1a2552] rounded-3xl shadow-2xl p-8 md:p-12 mb-16 text-white">
             <h3 className="text-3xl md:text-4xl font-bold mb-8 text-center">
               {t.alAndalusIntro.whyChoose.title}
             </h3>
@@ -474,7 +472,7 @@ export default function Home() {
 
           {/* Service Areas */}
           <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border-2 border-[#e4d8a7]">
-            <h3 className="text-3xl font-bold text-[#2a347c] mb-6 text-center">
+            <h3 className="text-3xl font-bold text-[#133563] mb-6 text-center">
               {t.alAndalusIntro.serviceAreas.title}
             </h3>
             <p className="text-lg text-gray-700 text-center mb-8 max-w-3xl mx-auto">
@@ -511,10 +509,10 @@ export default function Home() {
               ].map((location, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-4 rounded-xl text-center hover:shadow-lg transition-all border-2 border-transparent hover:border-[#2a347c]"
+                  className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-4 rounded-xl text-center hover:shadow-lg transition-all border-2 border-transparent hover:border-[#133563]"
                 >
                   <div className="text-3xl mb-2">{location.emoji}</div>
-                  <div className="font-semibold text-[#2a347c] text-sm">
+                  <div className="font-semibold text-[#133563] text-sm">
                     {location.name}
                   </div>
                 </div>
@@ -522,12 +520,11 @@ export default function Home() {
             </div>
 
             {/* Al Andalus Intro Section Images Gallery */}
-            <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
               {[
-                img0026,
+                img0033,
                 img0027,
-                img0028,
-                img0029,
+                img0034,
                 img0030,
                 img0031,
                 img0032,
@@ -557,10 +554,10 @@ export default function Home() {
       >
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-[#e4d8a7] rounded-full text-[#2a347c] font-semibold text-sm mb-4">
+            <div className="inline-block px-4 py-2 bg-[#539B47] rounded-full text-[#133563] font-semibold text-sm mb-4">
               {language === "en" ? "Our Services" : "خدماتنا"}
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2a347c] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#133563] mb-4">
               {t.services.title}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -604,7 +601,7 @@ export default function Home() {
               >
                 {/* Badge */}
                 {service.badge && (
-                  <div className="absolute top-4 right-4 bg-[#2a347c] text-white px-3 py-1 rounded-full text-xs font-semibold">
+                  <div className="absolute top-4 right-4 bg-[#133563] text-white px-3 py-1 rounded-full text-xs font-semibold">
                     {service.badge}
                   </div>
                 )}
@@ -616,7 +613,7 @@ export default function Home() {
                   {service.icon}
                 </div>
 
-                <h3 className="text-2xl font-bold text-[#2a347c] mb-3">
+                <h3 className="text-2xl font-bold text-[#133563] mb-3">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
@@ -624,7 +621,7 @@ export default function Home() {
                 </p>
 
                 <div className="flex items-baseline gap-2 mb-6">
-                  <div className="text-4xl font-bold text-[#2a347c]">
+                  <div className="text-4xl font-bold text-[#133563]">
                     {service.price.split(" ")[0]}
                   </div>
                   <div className="text-gray-500">
@@ -632,7 +629,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <button className="w-full bg-gradient-to-r from-[#2a347c] to-[#1a2552] text-white py-4 rounded-xl hover:shadow-lg transition-all font-semibold transform group-hover:scale-105">
+                <button className="w-full bg-gradient-to-r from-[#133563] to-[#1a2552] text-white py-4 rounded-xl hover:shadow-lg transition-all font-semibold transform group-hover:scale-105">
                   {t.nav.booking}
                 </button>
               </div>
@@ -641,7 +638,7 @@ export default function Home() {
 
           {/* Specialized Services */}
           <div>
-            <h3 className="text-3xl font-bold text-[#2a347c] text-center mb-4">
+            <h3 className="text-3xl font-bold text-[#133563] text-center mb-4">
               {t.services.specialized.title}
             </h3>
             <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -679,14 +676,14 @@ export default function Home() {
               ].map((service) => (
                 <div
                   key={service.key}
-                  className="group bg-white border-2 border-gray-200 p-8 rounded-2xl hover:border-[#2a347c] transition-all cursor-pointer text-center hover:shadow-xl transform hover:-translate-y-2"
+                  className="group bg-white border-2 border-gray-200 p-8 rounded-2xl hover:border-[#133563] transition-all cursor-pointer text-center hover:shadow-xl transform hover:-translate-y-2"
                 >
                   <div
                     className={`w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center text-3xl transform group-hover:scale-110 transition-transform`}
                   >
                     {service.icon}
                   </div>
-                  <h4 className="text-lg font-semibold text-[#2a347c]">
+                  <h4 className="text-lg font-semibold text-[#133563]">
                     {
                       t.services.specialized[
                         service.key as keyof typeof t.services.specialized
@@ -698,30 +695,7 @@ export default function Home() {
             </div>
 
             {/* Services Section Images Gallery */}
-            <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
-              {[
-                img0033,
-                img0034,
-                img0035,
-                img0036,
-                img0037,
-                img0038,
-                img0039,
-              ].map((img, index) => (
-                <div
-                  key={index}
-                  className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
-                >
-                  <Image
-                    src={img}
-                    alt={`Pest Control Service ${index + 1}`}
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
+        
           </div>
         </div>
       </section>
@@ -730,10 +704,10 @@ export default function Home() {
       <section className="py-20 px-4 bg-gradient-to-br from-white via-[#e4d8a7]/10 to-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-[#2a347c] rounded-full text-white font-semibold text-sm mb-4">
+            <div className="inline-block px-4 py-2 bg-[#539B47] rounded-full text-white font-semibold text-sm mb-4">
               {language === "en" ? "Our Services" : "خدماتنا"}
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2a347c] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#133563] mb-4">
               {language === "en"
                 ? "Comprehensive Pest Control Services"
                 : "خدمات مكافحة حشرات الشاملة"}
@@ -869,13 +843,13 @@ export default function Home() {
             ].map((service, index) => (
               <div
                 key={index}
-                className={`bg-white p-6 rounded-xl shadow-lg border-2 border-gray-100 hover:border-[#2a347c] transition-all hover:shadow-xl transform hover:-translate-y-1 ${
+                className={`bg-white p-6 rounded-xl shadow-lg border-2 border-gray-100 hover:border-[#133563] transition-all hover:shadow-xl transform hover:-translate-y-1 ${
                   language === "ar" ? "text-right" : "text-left"
                 }`}
                 dir={language === "ar" ? "rtl" : "ltr"}
               >
                 <div className="flex items-start gap-3">
-                  <span className="text-[#2a347c] font-bold text-lg mt-1">
+                  <span className="text-[#133563] font-bold text-lg mt-1">
                     {index + 1}.
                   </span>
                   <span className="text-gray-700 text-base leading-relaxed">
@@ -887,15 +861,12 @@ export default function Home() {
           </div>
 
           {/* Pest Control Services List Section Images Gallery */}
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4 mt-12">
+          <div className="grid grid-cols-3 md:grid-cols-3 gap-4 mt-12">
             {[
               img0040,
               img0041,
               img0042,
-              img0043,
-              img0044,
-              img0045,
-              img0046,
+          
             ].map((img, index) => (
               <div
                 key={index}
@@ -918,7 +889,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2a347c] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#133563] mb-4">
               {language === "en" ? "Why Choose Us?" : "لماذا تختارنا؟"}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -968,14 +939,14 @@ export default function Home() {
             ].map((benefit, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 hover:border-[#2a347c] transition-all hover:shadow-xl"
+                className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 hover:border-[#133563] transition-all hover:shadow-xl"
               >
                 <div
                   className={`w-16 h-16 rounded-xl bg-gradient-to-br ${benefit.color} flex items-center justify-center text-3xl mb-6`}
                 >
                   {benefit.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-[#2a347c] mb-4">
+                <h3 className="text-2xl font-bold text-[#133563] mb-4">
                   {benefit.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -986,30 +957,7 @@ export default function Home() {
           </div>
 
           {/* Company Benefits Section Images Gallery */}
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4 mt-12">
-            {[
-              img0047,
-              img0048,
-              img0049,
-              img0050,
-              img0051,
-              img0052,
-              img0053,
-            ].map((img, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
-              >
-                <Image
-                  src={img}
-                  alt={`Pest Control Service ${index + 1}`}
-                  width={150}
-                  height={150}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
+       
         </div>
       </section>
 
@@ -1017,10 +965,10 @@ export default function Home() {
       <section className="py-20 px-4 bg-gradient-to-br from-white via-gray-50 to-[#e4d8a7]/20">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-[#e4d8a7] rounded-full text-[#2a347c] font-semibold text-sm mb-4">
+            <div className="inline-block px-4 py-2 bg-[#539B47] rounded-full text-[#133563] font-semibold text-sm mb-4">
               {language === "en" ? "Company Information" : "معلومات الشركة"}
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2a347c] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#133563] mb-4">
               {t.companyInfoSection.title}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -1033,7 +981,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto">
             {/* Company Definition */}
             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 border-2 border-gray-100">
-              <h3 className="text-3xl font-bold text-[#2a347c] mb-6">
+              <h3 className="text-3xl font-bold text-[#133563] mb-6">
                 {t.companyInfoSection.definition.title}
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -1042,8 +990,8 @@ export default function Home() {
             </div>
 
             {/* Services Provided */}
-            <div className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] rounded-3xl shadow-xl p-8 md:p-12 mb-8">
-              <h3 className="text-3xl font-bold text-[#2a347c] mb-8 text-center">
+            <div className="bg-gradient-to-br from-[#e4d8a7] to-[#539B47] rounded-3xl shadow-xl p-8 md:p-12 mb-8">
+              <h3 className="text-3xl font-bold text-[#133563] mb-8 text-center">
                 {t.companyInfoSection.services.title}
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
@@ -1051,7 +999,7 @@ export default function Home() {
                   <div className="flex items-start gap-4">
                     <div className="text-3xl">🪳</div>
                     <div>
-                      <h4 className="font-bold text-[#2a347c] mb-2">
+                      <h4 className="font-bold text-[#133563] mb-2">
                         {language === "en"
                           ? "Cockroach Control"
                           : "مكافحة الصراصير"}
@@ -1066,7 +1014,7 @@ export default function Home() {
                   <div className="flex items-start gap-4">
                     <div className="text-3xl">🐜</div>
                     <div>
-                      <h4 className="font-bold text-[#2a347c] mb-2">
+                      <h4 className="font-bold text-[#133563] mb-2">
                         {language === "en" ? "Ant Control" : "مكافحة النمل"}
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -1079,7 +1027,7 @@ export default function Home() {
                   <div className="flex items-start gap-4">
                     <div className="text-3xl">🦟</div>
                     <div>
-                      <h4 className="font-bold text-[#2a347c] mb-2">
+                      <h4 className="font-bold text-[#133563] mb-2">
                         {language === "en"
                           ? "Mosquito Control"
                           : "مكافحة البعوض"}
@@ -1094,7 +1042,7 @@ export default function Home() {
                   <div className="flex items-start gap-4">
                     <div className="text-3xl">🐭</div>
                     <div>
-                      <h4 className="font-bold text-[#2a347c] mb-2">
+                      <h4 className="font-bold text-[#133563] mb-2">
                         {language === "en"
                           ? "Rodent Control"
                           : "مكافحة القوارض"}
@@ -1109,7 +1057,7 @@ export default function Home() {
                   <div className="flex items-start gap-4">
                     <div className="text-3xl">🛡️</div>
                     <div>
-                      <h4 className="font-bold text-[#2a347c] mb-2">
+                      <h4 className="font-bold text-[#133563] mb-2">
                         {language === "en"
                           ? "Preventive Treatment"
                           : "المعالجة الوقائية"}
@@ -1125,13 +1073,13 @@ export default function Home() {
 
             {/* Key Benefits */}
             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border-2 border-gray-100">
-              <h3 className="text-3xl font-bold text-[#2a347c] mb-8 text-center">
+              <h3 className="text-3xl font-bold text-[#133563] mb-8 text-center">
                 {t.companyInfoSection.benefits.title}
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border-2 border-green-100 hover:shadow-lg transition-all">
                   <div className="text-4xl mb-4">✅</div>
-                  <h4 className="font-bold text-[#2a347c] mb-3">
+                  <h4 className="font-bold text-[#133563] mb-3">
                     {language === "en"
                       ? "Safety & Effectiveness"
                       : "الأمان والفعالية"}
@@ -1142,7 +1090,7 @@ export default function Home() {
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl border-2 border-blue-100 hover:shadow-lg transition-all">
                   <div className="text-4xl mb-4">🏠</div>
-                  <h4 className="font-bold text-[#2a347c] mb-3">
+                  <h4 className="font-bold text-[#133563] mb-3">
                     {language === "en"
                       ? "Protecting Homes & Offices"
                       : "حماية المنازل والمكاتب"}
@@ -1153,7 +1101,7 @@ export default function Home() {
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl border-2 border-orange-100 hover:shadow-lg transition-all">
                   <div className="text-4xl mb-4">⚡</div>
-                  <h4 className="font-bold text-[#2a347c] mb-3">
+                  <h4 className="font-bold text-[#133563] mb-3">
                     {language === "en"
                       ? "Fast & Efficient Services"
                       : "خدمات سريعة وفعالة"}
@@ -1164,7 +1112,7 @@ export default function Home() {
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl border-2 border-purple-100 hover:shadow-lg transition-all">
                   <div className="text-4xl mb-4">🛡️</div>
-                  <h4 className="font-bold text-[#2a347c] mb-3">
+                  <h4 className="font-bold text-[#133563] mb-3">
                     {language === "en"
                       ? "Comprehensive Services"
                       : "خدمات شاملة"}
@@ -1175,7 +1123,7 @@ export default function Home() {
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl border-2 border-yellow-100 hover:shadow-lg transition-all">
                   <div className="text-4xl mb-4">🎯</div>
-                  <h4 className="font-bold text-[#2a347c] mb-3">
+                  <h4 className="font-bold text-[#133563] mb-3">
                     {language === "en" ? "Service Guarantee" : "ضمان الخدمة"}
                   </h4>
                   <p className="text-gray-700 text-sm leading-relaxed">
@@ -1184,7 +1132,7 @@ export default function Home() {
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl border-2 border-teal-100 hover:shadow-lg transition-all">
                   <div className="text-4xl mb-4">🌿</div>
-                  <h4 className="font-bold text-[#2a347c] mb-3">
+                  <h4 className="font-bold text-[#133563] mb-3">
                     {language === "en" ? "Natural Solutions" : "حلول طبيعية"}
                   </h4>
                   <p className="text-gray-700 text-sm leading-relaxed">
@@ -1193,7 +1141,7 @@ export default function Home() {
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl border-2 border-indigo-100 hover:shadow-lg transition-all">
                   <div className="text-4xl mb-4">🏡</div>
-                  <h4 className="font-bold text-[#2a347c] mb-3">
+                  <h4 className="font-bold text-[#133563] mb-3">
                     {language === "en"
                       ? "Residential Services"
                       : "الخدمات السكنية"}
@@ -1204,7 +1152,7 @@ export default function Home() {
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-slate-50 rounded-2xl border-2 border-gray-100 hover:shadow-lg transition-all">
                   <div className="text-4xl mb-4">🏢</div>
-                  <h4 className="font-bold text-[#2a347c] mb-3">
+                  <h4 className="font-bold text-[#133563] mb-3">
                     {language === "en"
                       ? "Commercial Services"
                       : "الخدمات التجارية"}
@@ -1215,7 +1163,7 @@ export default function Home() {
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl border-2 border-rose-100 hover:shadow-lg transition-all">
                   <div className="text-4xl mb-4">🧼</div>
-                  <h4 className="font-bold text-[#2a347c] mb-3">
+                  <h4 className="font-bold text-[#133563] mb-3">
                     {language === "en"
                       ? "Sterilization Services"
                       : "خدمات التعقيم"}
@@ -1226,7 +1174,7 @@ export default function Home() {
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-violet-50 to-purple-50 rounded-2xl border-2 border-violet-100 hover:shadow-lg transition-all md:col-span-2 lg:col-span-1">
                   <div className="text-4xl mb-4">🔬</div>
-                  <h4 className="font-bold text-[#2a347c] mb-3">
+                  <h4 className="font-bold text-[#133563] mb-3">
                     {language === "en"
                       ? "Specialized Treatment"
                       : "المعالجة المتخصصة"}
@@ -1238,31 +1186,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Company Information Section Images Gallery */}
-            <div className="grid grid-cols-3 md:grid-cols-7 gap-4 mt-12">
-              {[
-                img0054,
-                img0055,
-                img0056,
-                img0057,
-                img0058,
-                img0060,
-                img0061,
-              ].map((img, index) => (
-                <div
-                  key={index}
-                  className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
-                >
-                  <Image
-                    src={img}
-                    alt={`Pest Control Service ${index + 1}`}
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
+       
           </div>
         </div>
       </section>
@@ -1273,12 +1197,12 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <Link
               href="/about"
-              className="group bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-3 text-center border-2 border-transparent hover:border-[#2a347c]"
+              className="group bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-3 text-center border-2 border-transparent hover:border-[#133563]"
             >
               <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-5xl transform group-hover:scale-110 transition-transform">
                 ℹ️
               </div>
-              <h3 className="text-2xl font-bold text-[#2a347c] mb-4">
+              <h3 className="text-2xl font-bold text-[#133563] mb-4">
                 {t.nav.about}
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -1286,7 +1210,7 @@ export default function Home() {
                   ? "Learn more about our company and mission"
                   : "تعرف على المزيد عن شركتنا ورسالتنا"}
               </p>
-              <div className="mt-6 text-[#2a347c] font-semibold group-hover:translate-x-2 transition-transform inline-flex items-center gap-2">
+              <div className="mt-6 text-[#133563] font-semibold group-hover:translate-x-2 transition-transform inline-flex items-center gap-2">
                 {language === "en" ? "Learn More" : "اعرف المزيد"}
                 <svg
                   className="w-5 h-5"
@@ -1305,12 +1229,12 @@ export default function Home() {
             </Link>
             <Link
               href="/services"
-              className="group bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-3 text-center border-2 border-transparent hover:border-[#2a347c]"
+              className="group bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-3 text-center border-2 border-transparent hover:border-[#133563]"
             >
               <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-5xl transform group-hover:scale-110 transition-transform">
                 🛠️
               </div>
-              <h3 className="text-2xl font-bold text-[#2a347c] mb-4">
+              <h3 className="text-2xl font-bold text-[#133563] mb-4">
                 {t.nav.services}
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -1318,7 +1242,7 @@ export default function Home() {
                   ? "Explore our comprehensive pest control services"
                   : "استكشف خدمات مكافحة حشرات الشاملة لدينا"}
               </p>
-              <div className="mt-6 text-[#2a347c] font-semibold group-hover:translate-x-2 transition-transform inline-flex items-center gap-2">
+              <div className="mt-6 text-[#133563] font-semibold group-hover:translate-x-2 transition-transform inline-flex items-center gap-2">
                 {language === "en" ? "View Services" : "عرض الخدمات"}
                 <svg
                   className="w-5 h-5"
@@ -1337,7 +1261,7 @@ export default function Home() {
             </Link>
             <Link
               href="/contact"
-              className="group bg-gradient-to-br from-[#2a347c] to-[#1a2552] p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-3 text-center text-white"
+              className="group bg-gradient-to-br from-[#133563] to-[#1a2552] p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-3 text-center text-white"
             >
               <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center text-5xl transform group-hover:scale-110 transition-transform">
                 📞
@@ -1368,30 +1292,7 @@ export default function Home() {
           </div>
 
           {/* Quick Links Section Images Gallery */}
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4 mt-12">
-            {[
-              img0062,
-              img0063,
-              img0003,
-              img0004,
-              img0005,
-              img0006,
-              img0007,
-            ].map((img, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
-              >
-                <Image
-                  src={img}
-                  alt={`Pest Control Service ${index + 1}`}
-                  width={150}
-                  height={150}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
+         
         </div>
       </section>
 
@@ -1399,7 +1300,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2a347c] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#133563] mb-4">
               {t.locations.title}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -1419,12 +1320,12 @@ export default function Home() {
             ].map((location) => (
               <div
                 key={location}
-                className="group bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-8 rounded-2xl text-center hover:shadow-xl transition-all cursor-pointer transform hover:-translate-y-2 border-2 border-transparent hover:border-[#2a347c]"
+                className="group bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-8 rounded-2xl text-center hover:shadow-xl transition-all cursor-pointer transform hover:-translate-y-2 border-2 border-transparent hover:border-[#133563]"
               >
                 <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform">
                   📍
                 </div>
-                <h3 className="text-xl font-bold text-[#2a347c]">
+                <h3 className="text-xl font-bold text-[#133563]">
                   {t.locations[location as keyof typeof t.locations]}
                 </h3>
               </div>
@@ -1432,37 +1333,14 @@ export default function Home() {
           </div>
 
           {/* Locations Section Images Gallery */}
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4 mt-12">
-            {[
-              img0008,
-              img0009,
-              img0010,
-              img0011,
-              img0012,
-              img0013,
-              img0014,
-            ].map((img, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
-              >
-                <Image
-                  src={img}
-                  alt={`Pest Control Service ${index + 1}`}
-                  width={150}
-                  height={150}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
+    
         </div>
       </section>
 
       {/* Articles Section with Accordion */}
       <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-[#e4d8a7]/20">
         <div className="container mx-auto max-w-[1250px]">
-          <h2 className="text-4xl font-bold text-[#2a347c] text-center mb-12">
+          <h2 className="text-4xl font-bold text-[#133563] text-center mb-12">
             {t.articles.title}
           </h2>
           <div className="max-w-4xl mx-auto mb-12">
@@ -1475,31 +1353,7 @@ export default function Home() {
             />
           </div>
 
-          {/* Articles Section Images Gallery */}
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
-            {[
-              img0015,
-              img0016,
-              img0017,
-              img0018,
-              img0019,
-              img0020,
-              img0021,
-            ].map((img, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
-              >
-                <Image
-                  src={img}
-                  alt={`Pest Control Service ${index + 1}`}
-                  width={150}
-                  height={150}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
+     
         </div>
       </section>
 
@@ -1507,10 +1361,10 @@ export default function Home() {
       <section className="py-20 px-4 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-[#e4d8a7] rounded-full text-[#2a347c] font-semibold text-sm mb-4">
+            <div className="inline-block px-4 py-2 bg-[#539B47] rounded-full text-[#133563] font-semibold text-sm mb-4">
               {language === "en" ? "Client Reviews" : "آراء العملاء"}
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2a347c] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#133563] mb-4">
               {t.testimonials.title}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -1538,11 +1392,11 @@ export default function Home() {
                   : '"خدمة ممتازة! كان الفريق محترفًا وشاملًا. تم حل مشكلة حشرات لدينا بالكامل."'}
               </p>
               <div className="flex items-center justify-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2a347c] to-[#1a2552] flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#133563] to-[#1a2552] flex items-center justify-center text-white font-bold">
                   AM
                 </div>
                 <div>
-                  <p className="font-bold text-[#2a347c]">
+                  <p className="font-bold text-[#133563]">
                     {language === "en" ? "Ahmed M." : "أحمد م."}
                   </p>
                   <p className="text-sm text-gray-500">
@@ -1573,7 +1427,7 @@ export default function Home() {
                   SK
                 </div>
                 <div>
-                  <p className="font-bold text-[#2a347c]">
+                  <p className="font-bold text-[#133563]">
                     {language === "en" ? "Sarah K." : "سارة ك."}
                   </p>
                   <p className="text-sm text-gray-500">
@@ -1604,7 +1458,7 @@ export default function Home() {
                   MA
                 </div>
                 <div>
-                  <p className="font-bold text-[#2a347c]">
+                  <p className="font-bold text-[#133563]">
                     {language === "en" ? "Mohammed A." : "محمد أ."}
                   </p>
                   <p className="text-sm text-gray-500">
@@ -1616,30 +1470,7 @@ export default function Home() {
           </div>
 
           {/* Testimonials Section Images Gallery */}
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4 mt-12">
-            {[
-              img0022,
-              img0023,
-              img0024,
-              img0025,
-              img0026,
-              img0027,
-              img0028,
-            ].map((img, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
-              >
-                <Image
-                  src={img}
-                  alt={`Pest Control Service ${index + 1}`}
-                  width={150}
-                  height={150}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
+         
         </div>
       </section>
 
@@ -1647,10 +1478,10 @@ export default function Home() {
       <section className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-[#e4d8a7] rounded-full text-[#2a347c] font-semibold text-sm mb-4">
+            <div className="inline-block px-4 py-2 bg-[#539B47] rounded-full text-[#133563] font-semibold text-sm mb-4">
               {language === "en" ? "FAQ" : "الأسئلة الشائعة"}
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2a347c] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#133563] mb-4">
               {t.faq.title}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -1670,35 +1501,12 @@ export default function Home() {
           </div>
 
           {/* FAQ Section Images Gallery */}
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
-            {[
-              img0029,
-              img0030,
-              img0031,
-              img0032,
-              img0033,
-              img0034,
-              img0035,
-            ].map((img, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
-              >
-                <Image
-                  src={img}
-                  alt={`Pest Control Service ${index + 1}`}
-                  width={150}
-                  height={150}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
+         
         </div>
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-[#2a347c] via-[#1f2a6b] to-[#2a347c] text-white relative overflow-hidden">
+      <section className="py-20 px-4 bg-gradient-to-r from-[#133563] via-[#1f2a6b] to-[#133563] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -1717,7 +1525,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="tel:+971502765910"
-              className="bg-white text-[#2a347c] px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center gap-2"
+              className="bg-white text-[#133563] px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center gap-2"
             >
               <svg
                 className="w-5 h-5"
@@ -1736,31 +1544,7 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Call to Action Section Images Gallery */}
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4 mt-12">
-            {[
-              img0036,
-              img0037,
-              img0038,
-              img0039,
-              img0040,
-              img0041,
-              img0042,
-            ].map((img, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 opacity-80 hover:opacity-100"
-              >
-                <Image
-                  src={img}
-                  alt={`Pest Control Service ${index + 1}`}
-                  width={150}
-                  height={150}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
+   
         </div>
       </section>
 
@@ -1768,35 +1552,12 @@ export default function Home() {
       <section className="py-20 px-4 bg-gradient-to-br from-white via-[#e4d8a7]/10 to-white">
         <div className="container mx-auto max-w-[1250px]">
           {/* Gallery Images */}
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4 mb-16">
-            {[
-              img0003,
-              img0004,
-              img0005,
-              img0006,
-              img0007,
-              img0008,
-              img0009,
-            ].map((img, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
-              >
-                <Image
-                  src={img}
-                  alt={`Pest control service ${index + 1}`}
-                  width={181}
-                  height={225}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
+     
 
           {/* Main Article Content */}
           <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 border-2 border-gray-100">
             <h2
-              className={`text-3xl md:text-4xl font-bold text-[#2a347c] mb-6 ${
+              className={`text-3xl md:text-4xl font-bold text-[#133563] mb-6 ${
                 language === "ar" ? "text-right" : "text-left"
               }`}
               dir={language === "ar" ? "rtl" : "ltr"}
@@ -1819,9 +1580,9 @@ export default function Home() {
             {/* Pest Control by Emirate */}
             <div className="space-y-8">
               {/* Abu Dhabi */}
-              <div className="border-l-4 border-[#2a347c] pl-6 py-4">
+              <div className="border-l-4 border-[#133563] pl-6 py-4">
                 <h3
-                  className={`text-2xl font-bold text-[#2a347c] mb-4 ${
+                  className={`text-2xl font-bold text-[#133563] mb-4 ${
                     language === "ar" ? "text-right" : "text-left"
                   }`}
                   dir={language === "ar" ? "rtl" : "ltr"}
@@ -1865,9 +1626,9 @@ export default function Home() {
               </div>
 
               {/* Dubai */}
-              <div className="border-l-4 border-[#2a347c] pl-6 py-4">
+              <div className="border-l-4 border-[#133563] pl-6 py-4">
                 <h3
-                  className={`text-2xl font-bold text-[#2a347c] mb-4 ${
+                  className={`text-2xl font-bold text-[#133563] mb-4 ${
                     language === "ar" ? "text-right" : "text-left"
                   }`}
                   dir={language === "ar" ? "rtl" : "ltr"}
@@ -1911,9 +1672,9 @@ export default function Home() {
               </div>
 
               {/* Sharjah */}
-              <div className="border-l-4 border-[#2a347c] pl-6 py-4">
+              <div className="border-l-4 border-[#133563] pl-6 py-4">
                 <h3
-                  className={`text-2xl font-bold text-[#2a347c] mb-4 ${
+                  className={`text-2xl font-bold text-[#133563] mb-4 ${
                     language === "ar" ? "text-right" : "text-left"
                   }`}
                   dir={language === "ar" ? "rtl" : "ltr"}
@@ -1957,9 +1718,9 @@ export default function Home() {
               </div>
 
               {/* Ajman */}
-              <div className="border-l-4 border-[#2a347c] pl-6 py-4">
+              <div className="border-l-4 border-[#133563] pl-6 py-4">
                 <h3
-                  className={`text-2xl font-bold text-[#2a347c] mb-4 ${
+                  className={`text-2xl font-bold text-[#133563] mb-4 ${
                     language === "ar" ? "text-right" : "text-left"
                   }`}
                   dir={language === "ar" ? "rtl" : "ltr"}
@@ -2003,9 +1764,9 @@ export default function Home() {
               </div>
 
               {/* Ras Al Khaimah */}
-              <div className="border-l-4 border-[#2a347c] pl-6 py-4">
+              <div className="border-l-4 border-[#133563] pl-6 py-4">
                 <h3
-                  className={`text-2xl font-bold text-[#2a347c] mb-4 ${
+                  className={`text-2xl font-bold text-[#133563] mb-4 ${
                     language === "ar" ? "text-right" : "text-left"
                   }`}
                   dir={language === "ar" ? "rtl" : "ltr"}
@@ -2049,9 +1810,9 @@ export default function Home() {
               </div>
 
               {/* Fujairah */}
-              <div className="border-l-4 border-[#2a347c] pl-6 py-4">
+              <div className="border-l-4 border-[#133563] pl-6 py-4">
                 <h3
-                  className={`text-2xl font-bold text-[#2a347c] mb-4 ${
+                  className={`text-2xl font-bold text-[#133563] mb-4 ${
                     language === "ar" ? "text-right" : "text-left"
                   }`}
                   dir={language === "ar" ? "rtl" : "ltr"}
@@ -2095,9 +1856,9 @@ export default function Home() {
               </div>
 
               {/* Umm Al Quwain */}
-              <div className="border-l-4 border-[#2a347c] pl-6 py-4">
+              <div className="border-l-4 border-[#133563] pl-6 py-4">
                 <h3
-                  className={`text-2xl font-bold text-[#2a347c] mb-4 ${
+                  className={`text-2xl font-bold text-[#133563] mb-4 ${
                     language === "ar" ? "text-right" : "text-left"
                   }`}
                   dir={language === "ar" ? "rtl" : "ltr"}
@@ -2144,7 +1905,7 @@ export default function Home() {
             {/* Tips Section */}
             <div className="mt-12 bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] rounded-2xl p-8">
               <h3
-                className={`text-2xl md:text-3xl font-bold text-[#2a347c] mb-6 ${
+                className={`text-2xl md:text-3xl font-bold text-[#133563] mb-6 ${
                   language === "ar" ? "text-right" : "text-left"
                 }`}
                 dir={language === "ar" ? "rtl" : "ltr"}
@@ -2198,7 +1959,7 @@ export default function Home() {
             {/* Conclusion */}
             <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-gray-100">
               <h3
-                className={`text-2xl font-bold text-[#2a347c] mb-4 ${
+                className={`text-2xl font-bold text-[#133563] mb-4 ${
                   language === "ar" ? "text-right" : "text-left"
                 }`}
                 dir={language === "ar" ? "rtl" : "ltr"}
@@ -2220,7 +1981,7 @@ export default function Home() {
             {/* Sources */}
             <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-gray-100">
               <h3
-                className={`text-2xl font-bold text-[#2a347c] mb-4 ${
+                className={`text-2xl font-bold text-[#133563] mb-4 ${
                   language === "ar" ? "text-right" : "text-left"
                 }`}
                 dir={language === "ar" ? "rtl" : "ltr"}
@@ -2242,7 +2003,7 @@ export default function Home() {
           </div>
 
           {/* Contact Numbers */}
-          <div className="bg-gradient-to-br from-[#2a347c] to-[#1a2552] rounded-3xl shadow-xl p-8 text-white">
+          <div className="bg-gradient-to-br from-[#133563] to-[#1a2552] rounded-3xl shadow-xl p-8 text-white">
             <h3
               className={`text-2xl md:text-3xl font-bold mb-6 text-center ${
                 language === "ar" ? "text-right" : "text-left"

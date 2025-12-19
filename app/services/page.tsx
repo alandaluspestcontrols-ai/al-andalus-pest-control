@@ -20,15 +20,15 @@ export default function Services() {
       <section className="relative py-16 md:py-24 px-4 bg-gradient-to-br from-[#e4d8a7] via-[#d9d0a0] to-[#d4c897] overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#2a347c] rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#2a347c] rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#133563] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#133563] rounded-full blur-3xl"></div>
         </div>
 
         <div className="container mx-auto max-w-[1250px] relative z-10 text-center">
-          <div className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-[#2a347c] font-semibold text-sm mb-4">
+          <div className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-[#133563] font-semibold text-sm mb-4">
             {language === "en" ? "Our Services" : "خدماتنا"}
           </div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#2a347c] mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#133563] mb-6 leading-tight">
             {t.services.title}
           </h1>
           <p className="text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
@@ -43,10 +43,10 @@ export default function Services() {
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-[#e4d8a7] rounded-full text-[#2a347c] font-semibold text-sm mb-4">
+            <div className="inline-block px-4 py-2 bg-[#e4d8a7] rounded-full text-[#133563] font-semibold text-sm mb-4">
               {language === "en" ? "Our Services" : "خدماتنا"}
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2a347c] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#133563] mb-4">
               {t.services.title}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -90,7 +90,7 @@ export default function Services() {
               >
                 {/* Badge */}
                 {service.badge && (
-                  <div className="absolute top-4 right-4 bg-[#2a347c] text-white px-3 py-1 rounded-full text-xs font-semibold">
+                  <div className="absolute top-4 right-4 bg-[#133563] text-white px-3 py-1 rounded-full text-xs font-semibold">
                     {service.badge}
                   </div>
                 )}
@@ -102,7 +102,7 @@ export default function Services() {
                   {service.icon}
                 </div>
 
-                <h3 className="text-2xl font-bold text-[#2a347c] mb-3">
+                <h3 className="text-2xl font-bold text-[#133563] mb-3">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
@@ -110,7 +110,7 @@ export default function Services() {
                 </p>
 
                 <div className="flex items-baseline gap-2 mb-6">
-                  <div className="text-4xl font-bold text-[#2a347c]">
+                  <div className="text-4xl font-bold text-[#133563]">
                     {service.price.split(" ")[0]}
                   </div>
                   <div className="text-gray-500">
@@ -120,7 +120,7 @@ export default function Services() {
 
                 <Link
                   href="/contact"
-                  className="block w-full bg-gradient-to-r from-[#2a347c] to-[#1a2552] text-white py-4 rounded-xl hover:shadow-lg transition-all font-semibold transform group-hover:scale-105 text-center"
+                  className="block w-full bg-gradient-to-r from-[#133563] to-[#1a2552] text-white py-4 rounded-xl hover:shadow-lg transition-all font-semibold transform group-hover:scale-105 text-center"
                 >
                   {t.nav.booking}
                 </Link>
@@ -130,7 +130,7 @@ export default function Services() {
 
           {/* Specialized Services */}
           <div>
-            <h3 className="text-3xl font-bold text-[#2a347c] text-center mb-4">
+            <h3 className="text-3xl font-bold text-[#133563] text-center mb-4">
               {t.services.specialized.title}
             </h3>
             <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -168,14 +168,14 @@ export default function Services() {
               ].map((service) => (
                 <div
                   key={service.key}
-                  className="group bg-white border-2 border-gray-200 p-8 rounded-2xl hover:border-[#2a347c] transition-all cursor-pointer text-center hover:shadow-xl transform hover:-translate-y-2"
+                  className="group bg-white border-2 border-gray-200 p-8 rounded-2xl hover:border-[#133563] transition-all cursor-pointer text-center hover:shadow-xl transform hover:-translate-y-2"
                 >
                   <div
                     className={`w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center text-3xl transform group-hover:scale-110 transition-transform`}
                   >
                     {service.icon}
                   </div>
-                  <h4 className="text-lg font-semibold text-[#2a347c]">
+                  <h4 className="text-lg font-semibold text-[#133563]">
                     {
                       t.services.specialized[
                         service.key as keyof typeof t.services.specialized
@@ -193,7 +193,7 @@ export default function Services() {
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2a347c] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#133563] mb-4">
               {t.locations.title}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -213,12 +213,12 @@ export default function Services() {
             ].map((location) => (
               <div
                 key={location}
-                className="group bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-8 rounded-2xl text-center hover:shadow-xl transition-all cursor-pointer transform hover:-translate-y-2 border-2 border-transparent hover:border-[#2a347c]"
+                className="group bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-8 rounded-2xl text-center hover:shadow-xl transition-all cursor-pointer transform hover:-translate-y-2 border-2 border-transparent hover:border-[#133563]"
               >
                 <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform">
                   📍
                 </div>
-                <h3 className="text-xl font-bold text-[#2a347c]">
+                <h3 className="text-xl font-bold text-[#133563]">
                   {t.locations[location as keyof typeof t.locations]}
                 </h3>
               </div>

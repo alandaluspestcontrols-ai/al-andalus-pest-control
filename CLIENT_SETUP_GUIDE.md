@@ -518,7 +518,7 @@ git add .
 git commit -m "Description of changes"
 
 # 6. Push (Netlify will auto-deploy)
-git push origin main
+git push origin master
 ```
 
 ---

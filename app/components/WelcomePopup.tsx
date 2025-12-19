@@ -12,14 +12,14 @@ export default function WelcomePopup() {
   useEffect(() => {
     // Show popup once per browser session (when user first visits)
     const hasSeenPopup = sessionStorage.getItem("welcomePopupShown");
-    
+
     if (!hasSeenPopup) {
       // Small delay for better UX
       const timer = setTimeout(() => {
         setIsVisible(true);
         sessionStorage.setItem("welcomePopupShown", "true");
       }, 500);
-      
+
       return () => clearTimeout(timer);
     }
   }, []);
@@ -30,19 +30,20 @@ export default function WelcomePopup() {
 
   if (!isVisible) return null;
 
-  const welcomeMessage = language === "en" 
-    ? "Welcome to Al Andalus Pest Control! We're here to help you maintain a pest-free environment."
-    : "مرحباً بك في شركة الأندلس لمكافحة حشرات! نحن هنا لمساعدتك في الحفاظ على بيئة خالية من الآفات.";
+  const welcomeMessage =
+    language === "en"
+      ? "Welcome to Al Andalus Pest Control! We're here to help you maintain a pest-free environment."
+      : "مرحباً بك في شركة الأندلس لمكافحة حشرات! نحن هنا لمساعدتك في الحفاظ على بيئة خالية من الآفات.";
 
   const closeButton = language === "en" ? "Close" : "إغلاق";
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fadeIn">
-      <div className="bg-gradient-to-br from-[#e4d8a7] via-[#d9d0a0] to-[#d4c897] rounded-2xl shadow-2xl max-w-md w-full p-8 relative animate-slideUp border-2 border-[#2a347c]/20">
+      <div className="bg-gradient-to-br from-[#e4d8a7] via-[#d9d0a0] to-[#d4c897] rounded-2xl shadow-2xl max-w-md w-full p-8 relative animate-slideUp border-2 border-[#133563]/20">
         {/* Close Button */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 text-[#2a347c] hover:text-[#1a2552] transition-colors"
+          className="absolute top-4 right-4 text-[#133563] hover:text-[#1a2552] transition-colors"
           aria-label={closeButton}
         >
           <svg
@@ -64,7 +65,7 @@ export default function WelcomePopup() {
         <div className="text-center space-y-4">
           {/* Icon */}
           <div className="flex justify-center mb-4">
-            <div className="w-16 h-16 bg-[#2a347c] rounded-full flex items-center justify-center">
+            <div className="w-16 h-16 bg-[#133563] rounded-full flex items-center justify-center">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -82,19 +83,19 @@ export default function WelcomePopup() {
           </div>
 
           {/* Title */}
-          <h2 className="text-2xl font-bold text-[#2a347c]">
+          <h2 className="text-2xl font-bold text-[#133563]">
             {language === "en" ? "Welcome!" : "مرحباً!"}
           </h2>
 
           {/* Message */}
-          <p className="text-[#2a347c] text-lg leading-relaxed">
+          <p className="text-[#133563] text-lg leading-relaxed">
             {welcomeMessage}
           </p>
 
           {/* Action Button */}
           <button
             onClick={handleClose}
-            className="mt-6 w-full bg-[#2a347c] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#1a2552] transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="mt-6 w-full bg-[#133563] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#1a2552] transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             {closeButton}
           </button>
@@ -103,4 +104,3 @@ export default function WelcomePopup() {
     </div>
   );
 }
-

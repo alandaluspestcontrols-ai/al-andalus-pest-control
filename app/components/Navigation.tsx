@@ -27,37 +27,37 @@ export default function Navigation() {
               height={80}
               className="rounded-lg"
             />
-            <h1 className="text-xl font-bold text-[#2a347c]">{t.hero.title}</h1>
+            <h1 className="text-xl font-bold text-[#133563]">{t.hero.title}</h1>
           </Link>
           <div className="hidden md:flex items-center gap-6">
             <Link
               href="/"
-              className="text-[#2a347c] hover:text-[#1a2552] font-medium transition-colors"
+              className="text-[#133563] hover:text-[#1a2552] font-medium transition-colors"
             >
               {t.nav.home}
             </Link>
             <Link
               href="/about"
-              className="text-[#2a347c] hover:text-[#1a2552] font-medium transition-colors"
+              className="text-[#133563] hover:text-[#1a2552] font-medium transition-colors"
             >
               {t.nav.about}
             </Link>
 
             <Link
               href="/services"
-              className="text-[#2a347c] hover:text-[#1a2552] font-medium transition-colors"
+              className="text-[#133563] hover:text-[#1a2552] font-medium transition-colors"
             >
               {t.nav.services}
             </Link>
             <Link
               href="/gallery"
-              className="text-[#2a347c] hover:text-[#1a2552] font-medium transition-colors"
+              className="text-[#133563] hover:text-[#1a2552] font-medium transition-colors"
             >
               {t.nav.gallery}
             </Link>
             <Link
               href="/contact"
-              className="bg-[#2a347c] text-white px-6 py-2 rounded-full hover:bg-[#1a2552] transition-colors font-medium"
+              className="bg-[#539B47] text-white px-6 py-2 rounded-full hover:bg-[#1a2552] transition-colors font-medium"
             >
               {t.nav.booking}
             </Link>
@@ -67,7 +67,7 @@ export default function Navigation() {
           </div>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-[#2a347c] p-2"
+            className="md:hidden text-[#133563] p-2"
             aria-label="Toggle menu"
           >
             <svg
@@ -99,42 +99,42 @@ export default function Navigation() {
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-[#2a347c] hover:text-[#1a2552] font-medium transition-colors py-2"
+              className="block text-[#133563] hover:text-[#1a2552] font-medium transition-colors py-2"
             >
               {t.nav.home}
             </Link>
             <Link
               href="/about"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-[#2a347c] hover:text-[#1a2552] font-medium transition-colors py-2"
+              className="block text-[#133563] hover:text-[#1a2552] font-medium transition-colors py-2"
             >
               {t.nav.about}
             </Link>
             <Link
               href="/company-information"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-[#2a347c] hover:text-[#1a2552] font-medium transition-colors py-2"
+              className="block text-[#133563] hover:text-[#1a2552] font-medium transition-colors py-2"
             >
               {t.nav.companyInfo}
             </Link>
             <Link
               href="/services"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-[#2a347c] hover:text-[#1a2552] font-medium transition-colors py-2"
+              className="block text-[#133563] hover:text-[#1a2552] font-medium transition-colors py-2"
             >
               {t.nav.services}
             </Link>
             <Link
               href="/gallery"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-[#2a347c] hover:text-[#1a2552] font-medium transition-colors py-2"
+              className="block text-[#133563] hover:text-[#1a2552] font-medium transition-colors py-2"
             >
               {t.nav.gallery}
             </Link>
             <Link
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="block bg-[#2a347c] text-white px-6 py-2 rounded-full hover:bg-[#1a2552] transition-colors font-medium text-center"
+              className="block bg-[#133563] text-white px-6 py-2 rounded-full hover:bg-[#1a2552] transition-colors font-medium text-center"
             >
               {t.nav.booking}
             </Link>

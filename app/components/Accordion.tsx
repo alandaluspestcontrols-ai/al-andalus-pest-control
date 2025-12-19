@@ -41,17 +41,17 @@ export default function Accordion({
         return (
           <div
             key={item.id}
-            className="border-2 border-[#e4d8a7] rounded-xl overflow-hidden transition-all hover:border-[#2a347c]"
+            className="border-2 border-[#e4d8a7] rounded-xl overflow-hidden transition-all hover:border-[#133563]"
           >
             <button
               onClick={() => toggleItem(item.id)}
               className="w-full px-6 py-4 flex items-center justify-between bg-white hover:bg-[#e4d8a7]/20 transition-colors text-left"
             >
-              <span className="text-lg font-semibold text-[#2a347c] pr-4">
+              <span className="text-lg font-semibold text-[#133563] pr-4">
                 {item.title}
               </span>
               <svg
-                className={`w-6 h-6 text-[#2a347c] flex-shrink-0 transition-transform ${
+                className={`w-6 h-6 text-[#133563] flex-shrink-0 transition-transform ${
                   isOpen ? "rotate-180" : ""
                 }`}
                 fill="none"
@@ -85,4 +85,3 @@ export default function Accordion({
     </div>
   );
 }
-

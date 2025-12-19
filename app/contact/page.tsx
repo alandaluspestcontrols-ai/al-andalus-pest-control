@@ -114,7 +114,7 @@ export default function Contact() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#2a347c] to-[#1a2552] py-20 px-4 text-white">
+      <section className="relative bg-gradient-to-br from-[#133563] to-[#1a2552] py-20 px-4 text-white">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             {t.contact.title}
@@ -133,18 +133,18 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-4xl font-bold text-[#2a347c] mb-8">
+              <h2 className="text-4xl font-bold text-[#133563] mb-8">
                 {language === "en" ? "Contact Information" : "معلومات الاتصال"}
               </h2>
 
               <div className="mb-8">
-                <h3 className="text-2xl font-bold mb-4 flex items-center gap-3 text-[#2a347c]">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-3 text-[#133563]">
                   <span>📞</span> {t.contact.phone}
                 </h3>
                 <div className="space-y-3">
                   <a
                     href="tel:+971502765910"
-                    className="block text-lg text-gray-700 hover:text-[#2a347c] transition-colors p-4 bg-gray-50 rounded-lg hover:bg-[#e4d8a7]/20"
+                    className="block text-lg text-gray-700 hover:text-[#133563] transition-colors p-4 bg-gray-50 rounded-lg hover:bg-[#e4d8a7]/20"
                   >
                     <span dir="ltr">+971 50 276 5910</span>
                   </a>
@@ -152,7 +152,7 @@ export default function Contact() {
               </div>
 
               <div className="mb-8">
-                <h3 className="text-2xl font-bold mb-4 flex items-center gap-3 text-[#2a347c]">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-3 text-[#133563]">
                   <span>📍</span> {t.contact.location}
                 </h3>
                 <p className="text-lg text-gray-700 p-4 bg-gray-50 rounded-lg">
@@ -161,25 +161,25 @@ export default function Contact() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold mb-4 text-[#2a347c]">
+                <h3 className="text-2xl font-bold mb-4 text-[#133563]">
                   {t.contact.social}
                 </h3>
                 <div className="flex gap-4">
                   <a
                     href="#"
-                    className="bg-[#2a347c] text-white p-4 rounded-full hover:bg-[#1a2552] transition-colors"
+                    className="bg-[#133563] text-white p-4 rounded-full hover:bg-[#1a2552] transition-colors"
                   >
                     Instagram
                   </a>
                   <a
                     href="#"
-                    className="bg-[#2a347c] text-white p-4 rounded-full hover:bg-[#1a2552] transition-colors"
+                    className="bg-[#133563] text-white p-4 rounded-full hover:bg-[#1a2552] transition-colors"
                   >
                     Facebook
                   </a>
                   <a
                     href="#"
-                    className="bg-[#2a347c] text-white p-4 rounded-full hover:bg-[#1a2552] transition-colors"
+                    className="bg-[#133563] text-white p-4 rounded-full hover:bg-[#1a2552] transition-colors"
                   >
                     TikTok
                   </a>
@@ -189,7 +189,7 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-4xl font-bold text-[#2a347c] mb-8">
+              <h2 className="text-4xl font-bold text-[#133563] mb-8">
                 {language === "en" ? "Send us a Message" : "أرسل لنا رسالة"}
               </h2>
               <form className="space-y-6" onSubmit={handleSubmit}>
@@ -216,7 +216,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-6 py-4 rounded-lg border-2 border-gray-200 focus:border-[#2a347c] focus:outline-none transition-colors"
+                    className="w-full px-6 py-4 rounded-lg border-2 border-gray-200 focus:border-[#133563] focus:outline-none transition-colors"
                     placeholder={language === "en" ? "Your Name" : "اسمك"}
                   />
                 </div>
@@ -230,7 +230,7 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-6 py-4 rounded-lg border-2 border-gray-200 focus:border-[#2a347c] focus:outline-none transition-colors"
+                    className="w-full px-6 py-4 rounded-lg border-2 border-gray-200 focus:border-[#133563] focus:outline-none transition-colors"
                     placeholder={language === "en" ? "Your Phone" : "هاتفك"}
                   />
                 </div>
@@ -244,7 +244,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-6 py-4 rounded-lg border-2 border-gray-200 focus:border-[#2a347c] focus:outline-none transition-colors"
+                    className="w-full px-6 py-4 rounded-lg border-2 border-gray-200 focus:border-[#133563] focus:outline-none transition-colors"
                     placeholder={t.contact.emailPlaceholder}
                   />
                 </div>
@@ -258,14 +258,14 @@ export default function Contact() {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="w-full px-6 py-4 rounded-lg border-2 border-gray-200 focus:border-[#2a347c] focus:outline-none transition-colors"
+                    className="w-full px-6 py-4 rounded-lg border-2 border-gray-200 focus:border-[#133563] focus:outline-none transition-colors"
                     placeholder={language === "en" ? "Your Message" : "رسالتك"}
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full bg-[#2a347c] text-white px-8 py-4 rounded-full hover:bg-[#1a2552] transition-colors font-semibold text-lg ${
+                  className={`w-full bg-[#133563] text-white px-8 py-4 rounded-full hover:bg-[#1a2552] transition-colors font-semibold text-lg ${
                     isSubmitting ? "opacity-50 cursor-not-allowed" : ""
                   }`}
                 >
@@ -283,7 +283,7 @@ export default function Contact() {
 
           {/* Subscribe Section */}
           <div className="mt-16 bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-12 rounded-2xl text-center">
-            <h3 className="text-3xl font-bold text-[#2a347c] mb-4">
+            <h3 className="text-3xl font-bold text-[#133563] mb-4">
               {t.contact.subscribe}
             </h3>
             <p className="text-gray-700 mb-6">
@@ -295,11 +295,11 @@ export default function Contact() {
               <input
                 type="email"
                 placeholder={t.contact.emailPlaceholder}
-                className="flex-1 px-6 py-4 rounded-full text-[#2a347c] focus:outline-none focus:ring-2 focus:ring-[#2a347c]"
+                className="flex-1 px-6 py-4 rounded-full text-[#133563] focus:outline-none focus:ring-2 focus:ring-[#133563]"
               />
               <button
                 type="submit"
-                className="bg-[#2a347c] text-white px-8 py-4 rounded-full hover:bg-[#1a2552] transition-colors font-semibold"
+                className="bg-[#133563] text-white px-8 py-4 rounded-full hover:bg-[#1a2552] transition-colors font-semibold"
               >
                 {language === "en" ? "Subscribe" : "اشترك"}
               </button>
