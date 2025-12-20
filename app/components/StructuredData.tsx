@@ -1,6 +1,6 @@
 "use client";
 
-import { useLanguage } from "./contexts/LanguageContext";
+import { useLanguage } from "../contexts/LanguageContext";
 import { useEffect } from "react";
 
 export default function StructuredData() {
