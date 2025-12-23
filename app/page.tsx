@@ -70,8 +70,11 @@ import {
   img0062,
   img0063,
 } from "../public/assets";
-
-const logoImage = logo;
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation as SwiperNavigation } from "swiper/modules";
 
 export default function Home() {
   const { language } = useLanguage();
@@ -84,7 +87,7 @@ export default function Home() {
       {/* Enhanced Hero Section */}
       <section
         id="home"
-        className="relative py-16 md:py-24 px-4 bg-gradient-to-br from-[#e4d8a7] via-[#d9d0a0] to-[#d4c897] overflow-hidden"
+        className="relative py-16 md:py-24 px-4 bg-gradient-to-br from-[#bf9855]  to-[#bf9855] overflow-hidden"
       >
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 opacity-10">
@@ -100,10 +103,10 @@ export default function Home() {
                   ? "✨ Trusted Pest Control Experts"
                   : "✨ خبراء مكافحة حشرات الموثوقون"}
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#133563] leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
                 {t.hero.subtitle}
               </h1>
-              <p className="text-xl text-gray-800 leading-relaxed">
+              <p className="text-xl text-white/90 leading-relaxed">
                 {language === "en"
                   ? "Al Andalus Company is the ideal choice for pest control throughout the UAE, offering effective and safe solutions to maintain a healthy, insect-free environment."
                   : "شركة الأندلس هي الخيار الأمثل لمكافحة حشرات في جميع أنحاء الإمارات، حيث تقدم حلولاً فعالة وآمنة للحفاظ على بيئة صحية خالية من حشرات."}
@@ -202,43 +205,26 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="flex justify-center relative">
-              <div className="relative">
-                <div className="absolute -inset-4 bg-[#133563] rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
-                <Image
-                  src={img0022}
-                  alt="Pest Control Service"
-                  width={500}
-                  height={415}
-                  className="rounded-3xl shadow-2xl relative z-10 transform hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            </div>
-          </div>
 
-          {/* Hero Section Images Gallery */}
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 mt-12">
-            {[
-              img0011,
-              img0012,
-              img0013,
-              img0014,
-              img0015,
-              img0016,
-            ].map((img, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
+            <div className="flex justify-center ">
+              <Swiper
+                pagination={true}
+                modules={[Pagination, SwiperNavigation]}
+                className="w-full  "
               >
-                <Image
-                  src={img}
-                  alt={`Pest Control Service ${index + 1}`}
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
+                {[img0011, img0012, img0013, img0014, img0015, img0016].map(
+                  (img, index) => (
+                    <SwiperSlide key={index} className="relative w-full">
+                      <img
+                        src={img}
+                        alt="Pest Control Service"
+                        className="w-full md:h-[90vh] h-[40vh] object-cover rounded-3xl overflow-hidden"
+                      />
+                    </SwiperSlide>
+                  )
+                )}
+              </Swiper>
+            </div>
           </div>
         </div>
       </section>
@@ -275,33 +261,28 @@ export default function Home() {
 
           {/* Statistics Section Images Gallery */}
           <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-            {[
-              img0018,
-              img0020,
-              img0021,
-              img0023,
-              img0024,
-              img0025,
-            ].map((img, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 opacity-80 hover:opacity-100"
-              >
-                <Image
-                  src={img}
-                  alt={`Pest Control Service ${index + 1}`}
-                  width={150}
-                  height={150}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
+            {[img0018, img0020, img0021, img0023, img0024, img0025].map(
+              (img, index) => (
+                <div
+                  key={index}
+                  className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 opacity-80 hover:opacity-100"
+                >
+                  <Image
+                    src={img}
+                    alt={`Pest Control Service ${index + 1}`}
+                    width={150}
+                    height={150}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>
 
       {/* Al Andalus Company Introduction Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-white via-[#e4d8a7]/10 to-white">
+      <section className="py-20 px-4 bg-gradient-to-br from-white via-[#bf9855]/10 to-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-2 bg-[#539B47] rounded-full text-white font-semibold text-sm mb-4">
@@ -471,7 +452,7 @@ export default function Home() {
           </div>
 
           {/* Service Areas */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border-2 border-[#e4d8a7]">
+          <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border-2 border-[#bf9855]">
             <h3 className="text-3xl font-bold text-[#133563] mb-6 text-center">
               {t.alAndalusIntro.serviceAreas.title}
             </h3>
@@ -509,10 +490,10 @@ export default function Home() {
               ].map((location, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-4 rounded-xl text-center hover:shadow-lg transition-all border-2 border-transparent hover:border-[#133563]"
+                  className="bg-gradient-to-br from-[#bf9855] to-[#bf9855] p-4 rounded-xl text-center hover:shadow-lg transition-all border-2 border-transparent hover:border-[#133563]"
                 >
                   <div className="text-3xl mb-2">{location.emoji}</div>
-                  <div className="font-semibold text-[#133563] text-sm">
+                  <div className="font-semibold text-[#fff] text-sm">
                     {location.name}
                   </div>
                 </div>
@@ -521,27 +502,22 @@ export default function Home() {
 
             {/* Al Andalus Intro Section Images Gallery */}
             <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-              {[
-                img0033,
-                img0027,
-                img0034,
-                img0030,
-                img0031,
-                img0032,
-              ].map((img, index) => (
-                <div
-                  key={index}
-                  className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
-                >
-                  <Image
-                    src={img}
-                    alt={`Pest Control Service ${index + 1}`}
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
+              {[img0033, img0027, img0034, img0030, img0031, img0032].map(
+                (img, index) => (
+                  <div
+                    key={index}
+                    className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
+                  >
+                    <Image
+                      src={img}
+                      alt={`Pest Control Service ${index + 1}`}
+                      width={150}
+                      height={150}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>
@@ -695,13 +671,12 @@ export default function Home() {
             </div>
 
             {/* Services Section Images Gallery */}
-        
           </div>
         </div>
       </section>
 
       {/* Pest Control Services List Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-white via-[#e4d8a7]/10 to-white">
+      <section className="py-20 px-4 bg-gradient-to-br from-white via-[#bf9855]/10 to-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-2 bg-[#539B47] rounded-full text-white font-semibold text-sm mb-4">
@@ -862,12 +837,7 @@ export default function Home() {
 
           {/* Pest Control Services List Section Images Gallery */}
           <div className="grid grid-cols-3 md:grid-cols-3 gap-4 mt-12">
-            {[
-              img0040,
-              img0041,
-              img0042,
-          
-            ].map((img, index) => (
+            {[img0040, img0041, img0042].map((img, index) => (
               <div
                 key={index}
                 className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
@@ -957,12 +927,11 @@ export default function Home() {
           </div>
 
           {/* Company Benefits Section Images Gallery */}
-       
         </div>
       </section>
 
       {/* Company Information Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-white via-gray-50 to-[#e4d8a7]/20">
+      <section className="py-20 px-4 bg-gradient-to-br from-white via-gray-50 to-[#bf9855]/20">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-2 bg-[#539B47] rounded-full text-[#133563] font-semibold text-sm mb-4">
@@ -990,7 +959,7 @@ export default function Home() {
             </div>
 
             {/* Services Provided */}
-            <div className="bg-gradient-to-br from-[#e4d8a7] to-[#539B47] rounded-3xl shadow-xl p-8 md:p-12 mb-8">
+            <div className="bg-gradient-to-br from-[#bf9855] to-[#539B47] rounded-3xl shadow-xl p-8 md:p-12 mb-8">
               <h3 className="text-3xl font-bold text-[#133563] mb-8 text-center">
                 {t.companyInfoSection.services.title}
               </h3>
@@ -1185,14 +1154,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-       
           </div>
         </div>
       </section>
 
       {/* Quick Links Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-[#e4d8a7]/30 via-white to-[#e4d8a7]/30">
+      <section className="py-20 px-4 bg-gradient-to-br from-[#bf9855]/30 via-white to-[#bf9855]/30">
         <div className="container mx-auto max-w-[1250px]">
           <div className="grid md:grid-cols-3 gap-8">
             <Link
@@ -1292,7 +1259,6 @@ export default function Home() {
           </div>
 
           {/* Quick Links Section Images Gallery */}
-         
         </div>
       </section>
 
@@ -1320,12 +1286,12 @@ export default function Home() {
             ].map((location) => (
               <div
                 key={location}
-                className="group bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-8 rounded-2xl text-center hover:shadow-xl transition-all cursor-pointer transform hover:-translate-y-2 border-2 border-transparent hover:border-[#133563]"
+                className="group bg-gradient-to-br from-[#bf9855] to-[#bf9855] p-8 rounded-2xl text-center hover:shadow-xl transition-all cursor-pointer transform hover:-translate-y-2 border-2 border-transparent hover:border-[#133563]"
               >
                 <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform">
                   📍
                 </div>
-                <h3 className="text-xl font-bold text-[#133563]">
+                <h3 className="text-xl font-bold text-[#fff]">
                   {t.locations[location as keyof typeof t.locations]}
                 </h3>
               </div>
@@ -1333,12 +1299,11 @@ export default function Home() {
           </div>
 
           {/* Locations Section Images Gallery */}
-    
         </div>
       </section>
 
       {/* Articles Section with Accordion */}
-      <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-[#e4d8a7]/20">
+      <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-[#bf9855]/20">
         <div className="container mx-auto max-w-[1250px]">
           <h2 className="text-4xl font-bold text-[#133563] text-center mb-12">
             {t.articles.title}
@@ -1352,8 +1317,6 @@ export default function Home() {
               }))}
             />
           </div>
-
-     
         </div>
       </section>
 
@@ -1470,7 +1433,6 @@ export default function Home() {
           </div>
 
           {/* Testimonials Section Images Gallery */}
-         
         </div>
       </section>
 
@@ -1501,7 +1463,6 @@ export default function Home() {
           </div>
 
           {/* FAQ Section Images Gallery */}
-         
         </div>
       </section>
 
@@ -1543,16 +1504,13 @@ export default function Home() {
               <span dir="ltr">+971 50 276 5910</span>
             </a>
           </div>
-
-   
         </div>
       </section>
 
       {/* Al Andalus Pest Control Company - Effective Solutions Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-white via-[#e4d8a7]/10 to-white">
+      <section className="py-20 px-4 bg-gradient-to-br from-white via-[#bf9855]/10 to-white">
         <div className="container mx-auto max-w-[1250px]">
           {/* Gallery Images */}
-     
 
           {/* Main Article Content */}
           <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 border-2 border-gray-100">
@@ -1903,7 +1861,7 @@ export default function Home() {
             </div>
 
             {/* Tips Section */}
-            <div className="mt-12 bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] rounded-2xl p-8">
+            <div className="mt-12 bg-gradient-to-br from-[#bf9855] to-[#bf9855] rounded-2xl p-8">
               <h3
                 className={`text-2xl md:text-3xl font-bold text-[#133563] mb-6 ${
                   language === "ar" ? "text-right" : "text-left"
@@ -1915,7 +1873,7 @@ export default function Home() {
                   : "نصائح لمكافحة حشرات:"}
               </h3>
               <ol
-                className={`list-decimal list-inside space-y-3 text-gray-800 ${
+                className={`list-decimal list-inside space-y-3 text-white ${
                   language === "ar" ? "text-right" : "text-left"
                 }`}
                 dir={language === "ar" ? "rtl" : "ltr"}
@@ -1959,7 +1917,7 @@ export default function Home() {
             {/* Conclusion */}
             <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-gray-100">
               <h3
-                className={`text-2xl font-bold text-[#133563] mb-4 ${
+                className={`text-2xl font-bold text-[#fff] mb-4 ${
                   language === "ar" ? "text-right" : "text-left"
                 }`}
                 dir={language === "ar" ? "rtl" : "ltr"}

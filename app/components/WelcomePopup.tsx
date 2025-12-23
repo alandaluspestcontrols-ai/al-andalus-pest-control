@@ -39,7 +39,7 @@ export default function WelcomePopup() {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fadeIn">
-      <div className="bg-gradient-to-br from-[#e4d8a7] via-[#d9d0a0] to-[#d4c897] rounded-2xl shadow-2xl max-w-md w-full p-8 relative animate-slideUp border-2 border-[#133563]/20">
+      <div className="bg-gradient-to-br from-[#bf9855] via-[#d9d0a0] to-[#bf9855] rounded-2xl shadow-2xl max-w-md w-full p-8 relative animate-slideUp border-2 border-[#133563]/20">
         {/* Close Button */}
         <button
           onClick={handleClose}

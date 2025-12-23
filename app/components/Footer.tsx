@@ -13,7 +13,7 @@ export default function Footer() {
   const t = translations[language];
 
   return (
-    <footer className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] py-12 px-4">
+    <footer className="bg-gradient-to-br from-[#bf9855] to-[#bf9855] py-12 px-4">
       <div className="container mx-auto max-w-[1250px]">
         <div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-8">
           {/* Left Section - Contact Information */}

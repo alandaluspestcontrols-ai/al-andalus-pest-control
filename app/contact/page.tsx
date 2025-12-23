@@ -144,7 +144,7 @@ export default function Contact() {
                 <div className="space-y-3">
                   <a
                     href="tel:+971502765910"
-                    className="block text-lg text-gray-700 hover:text-[#133563] transition-colors p-4 bg-gray-50 rounded-lg hover:bg-[#e4d8a7]/20"
+                    className="block text-lg text-gray-700 hover:text-[#133563] transition-colors p-4 bg-gray-50 rounded-lg hover:bg-[#bf9855]/20"
                   >
                     <span dir="ltr">+971 50 276 5910</span>
                   </a>
@@ -282,7 +282,7 @@ export default function Contact() {
           </div>
 
           {/* Subscribe Section */}
-          <div className="mt-16 bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-12 rounded-2xl text-center">
+          <div className="mt-16 bg-gradient-to-br from-[#bf9855] to-[#bf9855] p-12 rounded-2xl text-center">
             <h3 className="text-3xl font-bold text-[#133563] mb-4">
               {t.contact.subscribe}
             </h3>

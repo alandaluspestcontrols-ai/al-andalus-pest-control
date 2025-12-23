@@ -18,7 +18,7 @@ export default function Gallery() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 px-4 bg-gradient-to-br from-[#e4d8a7] via-[#d9d0a0] to-[#d4c897] overflow-hidden">
+      <section className="relative py-16 md:py-24 px-4 bg-gradient-to-br from-[#bf9855] via-[#d9d0a0] to-[#bf9855] overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-[#133563] rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#133563] rounded-full blur-3xl"></div>

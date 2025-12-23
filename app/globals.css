@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #e4d8a7;
+  --primary: #bf9855;
   --secondary: #0c2646;
 }
 
@@ -57,3 +57,4 @@ html {
 .animate-slideUp {
   animation: slideUp 0.4s ease-out;
 }
+

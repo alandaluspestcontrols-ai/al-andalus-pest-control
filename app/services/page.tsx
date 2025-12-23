@@ -17,7 +17,7 @@ export default function Services() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 px-4 bg-gradient-to-br from-[#e4d8a7] via-[#d9d0a0] to-[#d4c897] overflow-hidden">
+      <section className="relative py-16 md:py-24 px-4 bg-gradient-to-br from-[#bf9855] via-[#d9d0a0] to-[#bf9855] overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-[#133563] rounded-full blur-3xl"></div>
@@ -43,7 +43,7 @@ export default function Services() {
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-[1250px]">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-[#e4d8a7] rounded-full text-[#133563] font-semibold text-sm mb-4">
+            <div className="inline-block px-4 py-2 bg-[#bf9855] rounded-full text-[#133563] font-semibold text-sm mb-4">
               {language === "en" ? "Our Services" : "خدماتنا"}
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#133563] mb-4">
@@ -213,7 +213,7 @@ export default function Services() {
             ].map((location) => (
               <div
                 key={location}
-                className="group bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-8 rounded-2xl text-center hover:shadow-xl transition-all cursor-pointer transform hover:-translate-y-2 border-2 border-transparent hover:border-[#133563]"
+                className="group bg-gradient-to-br from-[#bf9855] to-[#bf9855] p-8 rounded-2xl text-center hover:shadow-xl transition-all cursor-pointer transform hover:-translate-y-2 border-2 border-transparent hover:border-[#133563]"
               >
                 <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform">
                   📍

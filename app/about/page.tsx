@@ -169,7 +169,7 @@ export default function About() {
               {t.about.companyServices.description}
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <div className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-6 rounded-xl shadow-lg">
+              <div className="bg-gradient-to-br from-[#bf9855] to-[#bf9855] p-6 rounded-xl shadow-lg">
                 <div className="text-4xl mb-4">🐜</div>
                 <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en"
@@ -180,7 +180,7 @@ export default function About() {
                   {t.about.companyServices.termite}
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-6 rounded-xl shadow-lg">
+              <div className="bg-gradient-to-br from-[#bf9855] to-[#bf9855] p-6 rounded-xl shadow-lg">
                 <div className="text-4xl mb-4">🪳</div>
                 <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en" ? "Cockroach Control" : "مكافحة الصراصير"}
@@ -189,14 +189,14 @@ export default function About() {
                   {t.about.companyServices.cockroach}
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-6 rounded-xl shadow-lg">
+              <div className="bg-gradient-to-br from-[#bf9855] to-[#bf9855] p-6 rounded-xl shadow-lg">
                 <div className="text-4xl mb-4">🐭</div>
                 <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en" ? "Rat Control" : "مكافحة الفئران"}
                 </h3>
                 <p className="text-gray-700">{t.about.companyServices.rat}</p>
               </div>
-              <div className="bg-gradient-to-br from-[#e4d8a7] to-[#d4c897] p-6 rounded-xl shadow-lg">
+              <div className="bg-gradient-to-br from-[#bf9855] to-[#bf9855] p-6 rounded-xl shadow-lg">
                 <div className="text-4xl mb-4">🦟</div>
                 <h3 className="text-xl font-bold text-[#133563] mb-3">
                   {language === "en" ? "Mosquito Control" : "مكافحة البعوض"}
