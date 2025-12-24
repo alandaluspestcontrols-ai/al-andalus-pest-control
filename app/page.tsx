@@ -213,6 +213,7 @@ export default function Home() {
 
             <div className="flex justify-center order-2 md:order-2 w-full">
               <Swiper
+                key={language}
                 pagination={true}
                 modules={[Pagination, SwiperNavigation, Autoplay]}
                 className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[90vh]"
