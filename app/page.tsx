@@ -74,7 +74,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation as SwiperNavigation } from "swiper/modules";
+import "swiper/css/autoplay";
+import {
+  Pagination,
+  Navigation as SwiperNavigation,
+  Autoplay,
+} from "swiper/modules";
 
 export default function Home() {
   const { language } = useLanguage();
@@ -87,7 +92,7 @@ export default function Home() {
       {/* Enhanced Hero Section */}
       <section
         id="home"
-        className="relative py-16 md:py-24 px-4 bg-gradient-to-br from-[#bf9855]  to-[#bf9855] overflow-hidden"
+        className="relative py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 bg-gradient-to-br from-[#bf9855] to-[#bf9855] overflow-hidden"
       >
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 opacity-10">
@@ -96,28 +101,28 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto max-w-[1250px] relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="space-y-6">
-              <div className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-[#133563] font-semibold text-sm mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-8 md:mb-16">
+            <div className="space-y-4 sm:space-y-6 order-1 md:order-1">
+              <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-white/80 backdrop-blur-sm rounded-full text-[#133563] font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
                 {language === "en"
                   ? "✨ Trusted Pest Control Experts"
                   : "✨ خبراء مكافحة حشرات الموثوقون"}
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight break-words">
                 {t.hero.subtitle}
               </h1>
-              <p className="text-xl text-white/90 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed">
                 {language === "en"
                   ? "Al Andalus Company is the ideal choice for pest control throughout the UAE, offering effective and safe solutions to maintain a healthy, insect-free environment."
                   : "شركة الأندلس هي الخيار الأمثل لمكافحة حشرات في جميع أنحاء الإمارات، حيث تقدم حلولاً فعالة وآمنة للحفاظ على بيئة صحية خالية من حشرات."}
               </p>
 
               {/* Key Features */}
-              <div className="grid grid-cols-2 gap-4 my-8">
-                <div className="flex items-center gap-3 bg-white/60 backdrop-blur-sm p-4 rounded-xl">
-                  <div className="text-3xl">🛡️</div>
+              <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 my-4 sm:my-6 md:my-8">
+                <div className="flex items-center gap-2 sm:gap-3 bg-white/60 backdrop-blur-sm p-3 sm:p-4 rounded-xl">
+                  <div className="text-2xl sm:text-3xl">🛡️</div>
                   <div>
-                    <div className="font-bold text-[#133563] text-sm">
+                    <div className="font-bold text-[#133563] text-xs sm:text-sm">
                       {language === "en" ? "Safe & Effective" : "آمن وفعال"}
                     </div>
                     <div className="text-xs text-gray-600">
@@ -125,10 +130,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 bg-white/60 backdrop-blur-sm p-4 rounded-xl">
-                  <div className="text-3xl">⚡</div>
+                <div className="flex items-center gap-2 sm:gap-3 bg-white/60 backdrop-blur-sm p-3 sm:p-4 rounded-xl">
+                  <div className="text-2xl sm:text-3xl">⚡</div>
                   <div>
-                    <div className="font-bold text-[#133563] text-sm">
+                    <div className="font-bold text-[#133563] text-xs sm:text-sm">
                       {language === "en"
                         ? "24/7 Service"
                         : "خدمة على مدار الساعة"}
@@ -138,10 +143,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 bg-white/60 backdrop-blur-sm p-4 rounded-xl">
-                  <div className="text-3xl">✅</div>
+                <div className="flex items-center gap-2 sm:gap-3 bg-white/60 backdrop-blur-sm p-3 sm:p-4 rounded-xl">
+                  <div className="text-2xl sm:text-3xl">✅</div>
                   <div>
-                    <div className="font-bold text-[#133563] text-sm">
+                    <div className="font-bold text-[#133563] text-xs sm:text-sm">
                       {language === "en" ? "Warranty" : "ضمان"}
                     </div>
                     <div className="text-xs text-gray-600">
@@ -151,10 +156,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 bg-white/60 backdrop-blur-sm p-4 rounded-xl">
-                  <div className="text-3xl">🏆</div>
+                <div className="flex items-center gap-2 sm:gap-3 bg-white/60 backdrop-blur-sm p-3 sm:p-4 rounded-xl">
+                  <div className="text-2xl sm:text-3xl">🏆</div>
                   <div>
-                    <div className="font-bold text-[#133563] text-sm">
+                    <div className="font-bold text-[#133563] text-xs sm:text-sm">
                       {language === "en" ? "Expert Team" : "فريق خبير"}
                     </div>
                     <div className="text-xs text-gray-600">
@@ -164,14 +169,14 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex gap-4 flex-wrap">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 flex-wrap">
                 <a
                   href="#contact"
-                  className="group bg-[#539B47] text-white px-8 py-4 rounded-full hover:bg-[#1a2552] transition-all transform hover:scale-105 font-semibold shadow-xl hover:shadow-2xl flex items-center gap-2"
+                  className="group bg-[#539B47] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-[#1a2552] transition-all transform hover:scale-105 font-semibold shadow-xl hover:shadow-2xl flex items-center justify-center gap-2 text-sm sm:text-base"
                 >
                   <span>{t.hero.cta}</span>
                   <svg
-                    className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -186,10 +191,10 @@ export default function Home() {
                 </a>
                 <a
                   href="tel:+971502765910"
-                  className="bg-white text-[#133563] px-8 py-4 rounded-full hover:bg-gray-50 transition-all border-2 border-[#133563] font-semibold shadow-lg hover:shadow-xl flex items-center gap-2"
+                  className="bg-white text-[#133563] px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gray-50 transition-all border-2 border-[#133563] font-semibold shadow-lg hover:shadow-xl flex items-center justify-center gap-2 text-sm sm:text-base"
                 >
                   <svg
-                    className="w-5 h-5"
+                    className="w-4 h-4 sm:w-5 sm:h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -206,20 +211,32 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex justify-center ">
+            <div className="flex justify-center order-2 md:order-2 w-full">
               <Swiper
                 pagination={true}
-                modules={[Pagination, SwiperNavigation]}
-                className="w-full  "
+                modules={[Pagination, SwiperNavigation, Autoplay]}
+                className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[90vh]"
+                spaceBetween={10}
+                slidesPerView={1}
+                loop={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
               >
                 {[img0011, img0012, img0013, img0014, img0015, img0016].map(
                   (img, index) => (
-                    <SwiperSlide key={index} className="relative w-full">
-                      <img
-                        src={img}
-                        alt="Pest Control Service"
-                        className="w-full md:h-[90vh] h-[40vh] object-cover rounded-3xl overflow-hidden"
-                      />
+                    <SwiperSlide key={index} className="relative w-full h-full">
+                      <div className="relative w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden">
+                        <Image
+                          src={img}
+                          alt={`Pest Control Service ${index + 1}`}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          priority={index === 0}
+                        />
+                      </div>
                     </SwiperSlide>
                   )
                 )}
